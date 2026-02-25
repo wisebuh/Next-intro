@@ -8,8 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      <EventList items={featuredEvents}/>
-      
+      <EventList items={featuredEvents}/> 
     </div>
   ); 
 }

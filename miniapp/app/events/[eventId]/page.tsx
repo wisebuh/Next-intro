@@ -1,4 +1,4 @@
-"use client"  // 👈 add this as the very first line
+"use client"
 
 import { useParams } from 'next/navigation'
 import { getEventById } from '@/dummy-data';

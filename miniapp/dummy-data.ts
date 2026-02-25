@@ -40,7 +40,7 @@ const DUMMY_EVENTS = [
         title:"Programming for everyone",
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
-        date:"2021-05.12",
+        date:"2021-05-12",
         image:"",
         isFeatured:false
     },
@@ -58,7 +58,7 @@ const DUMMY_EVENTS = [
         title:"Excising the power of influence",
         description:"Everyone gets inluenced at some point! We just need to guided on what influences us",
         location:"Somestreet 25, 12345 San Somewhere",
-        date:"2021-05.12",
+        date:"2021-05-12",
         image:"images/influence.jpg",
         isFeatured:true
     },
@@ -76,7 +76,7 @@ const DUMMY_EVENTS = [
         title:"Programming for everyone",
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
-        date:"2021-05.12",
+        date:"2021-05-12",
         image:"",
         isFeatured:false
     },
@@ -94,7 +94,7 @@ const DUMMY_EVENTS = [
         title:"Programming for everyone",
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
-        date:"2021-05.12",
+        date:"2021-05-12",
         image:"",
         isFeatured:false
     },
@@ -112,7 +112,7 @@ const DUMMY_EVENTS = [
         title:"Programming for everyone",
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
-        date:"2021-05.12",
+        date:"2021-05-12",
         image:"",
         isFeatured:false
     }
@@ -137,3 +137,7 @@ export function getFilteredEvents({dateFilter}:any){
     return filteredEvents;
 }
 
+
+export function getEventById(id: string) {
+  return DUMMY_EVENTS.find(event => event.id === id);
+}
