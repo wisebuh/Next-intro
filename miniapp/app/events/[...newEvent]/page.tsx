@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Events() {
   return (
-    <div>All Events</div>
+    <div>
+      
+    </div>
   )
 }

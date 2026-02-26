@@ -1,32 +1,22 @@
-"use client"  // 👈 add this as the very first line
+"use client";
 
-import { useParams } from 'next/navigation'
-import { getEventById } from '@/dummy-data';
-import { Fragment } from 'react';
-import EventSummary from "@/event-detail/event-summary";
-import EventLogistics from "@/event-detail/event-logistics";
-import EventContent from "@/event-detail/event-content";
+import { useRouter } from "next/navigation";
+import { getAllEvents } from "@/dummy-data";
+import EventList from "@/components/events/Event-list";
+import EventsSearch from "@/components/events/event-search";
 
-export default function EventId() {
-  const params = useParams();
-  const eventId = params.eventId;
-  const event = getEventById(eventId)
+export default function AllEventPage() {
+  const router = useRouter();
+  const events = getAllEvents();
 
-  if (!eventId) return <p>Loading...</p>
-  if (!event) return <p>No Event Found</p>
+  function findEventsHandler(year: number, month: number) {
+    router.push(`/events/${year}/${month}`);
+  }
 
   return (
-    <Fragment>
-      <EventSummary title={event.title} />
-      <EventLogistics
-        date={event.date}
-        address={event.location}
-        image={event.image}
-        imageAlt={event.title}
-      />
-      <EventContent>
-        <p>{event.description}</p>
-      </EventContent>
-    </Fragment>
-  )
+    <>
+      <EventsSearch onSearch={findEventsHandler} />
+      <EventList items={events} />
+    </>
+  );
 }

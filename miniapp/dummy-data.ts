@@ -1,3 +1,4 @@
+
 const DUMMY_EVENTS = [
     {
         id: 'e1',
@@ -19,7 +20,7 @@ const DUMMY_EVENTS = [
     },
     {
         id: 'e3',
-        title:"Building a condusive environmenr",
+        title:"Building a condusive environment",
         description:"Building a society for everyone!",
         location:"A street close to you, 12343 Amasoma",
         date:"2021-05-19",
@@ -41,7 +42,7 @@ const DUMMY_EVENTS = [
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
         date:"2021-05-12",
-        image:"",
+        image:"images/influence.jpg",
         isFeatured:false
     },
     {
@@ -64,11 +65,11 @@ const DUMMY_EVENTS = [
     },
     {
         id:"e8",
-        title:"Networking for introvets",
-        description:"We know: Networking is no fun if you are an introvert person. That's why we came here ",
+        title:"cats",
+        description:"Cats are beautiful creatures with kind and domestic hearts",
         location:"New Wall Street 5, 98765 New York",
         date:"2021-05-30",
-        image:"",
+        image:"images/cat.jpg",
         isFeatured:false,
     },
     {
@@ -77,7 +78,7 @@ const DUMMY_EVENTS = [
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
         date:"2021-05-12",
-        image:"",
+        image:"images/influence.jpg",
         isFeatured:false
     },
     {
@@ -86,7 +87,7 @@ const DUMMY_EVENTS = [
         description:"We know: Networking is no fun if you are an introvert person. That's why we came here ",
         location:"New Wall Street 5, 98765 New York",
         date:"2021-05-30",
-        image:"",
+        image:"images/influence.jpg",
         isFeatured:false,
     },
     {
@@ -95,7 +96,7 @@ const DUMMY_EVENTS = [
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
         date:"2021-05-12",
-        image:"",
+        image:"images/influence.jpg",
         isFeatured:false
     },
     {
@@ -104,7 +105,7 @@ const DUMMY_EVENTS = [
         description:"We know: Networking is no fun if you are an introvert person. That's why we came here ",
         location:"New Wall Street 5, 98765 New York",
         date:"2021-05-30",
-        image:"",
+        image:"images/influence.jpg",
         isFeatured:false,
     },
     {
@@ -113,7 +114,7 @@ const DUMMY_EVENTS = [
         description:"Everyone can learn to code! Yes, everyone! In this live event, we are going to boast",
         location:"Somestreet 25, 12345 San Somewhere",
         date:"2021-05-12",
-        image:"",
+        image:"images/influence.jpg",
         isFeatured:false
     }
 ];

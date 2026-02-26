@@ -4,6 +4,7 @@ import Image from "next/image";
 import AddressIcon from "@/icons/address-icon";
 import DateIcon from "@/icons/date-icon";
 import ArrowRightIcon from "@/icons/arrow-right-icon";
+import eventImage from "@/constant/image";
 
 export default function EventItem(props) {
     const {title, image, date, location, id} = props;
@@ -19,7 +20,7 @@ export default function EventItem(props) {
 
     return (
         <li className={classes.item}>
-            <Image src={`/${image}`} alt={title} width={250} height={160}/>
+            <Image src={`/${image}` || eventImage.cat} alt={title} width={250} height={160}/>
             <div className={classes.content}>
                 <div className={classes.info}>
                     <h2>{title}</h2>
